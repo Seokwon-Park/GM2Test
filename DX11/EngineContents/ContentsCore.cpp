@@ -40,10 +40,7 @@ void UContentsCore::EngineStart(UEngineInitData& _Data)
 
 
 	// 주인공 APawn 상속 받으세요.
-	UEngineCore::CreateLevel<ATitleGameMode, APawn, ATitleHUD>("Titlelevel");
-	UEngineCore::CreateLevel<ATileMapGameMode, APawn, AHUD>("TileMapEditor");
 	UEngineCore::CreateLevel<ATestGameMode, APlayer, AHUD>("TestLevel");
-	//UEngineCore::OpenLevel("Titlelevel");
 	UEngineCore::OpenLevel("TestLevel");
 
 	UEngineGUI::AllWindowOff();
